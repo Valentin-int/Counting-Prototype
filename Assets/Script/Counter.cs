@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class Counter : MonoBehaviour
 {
     public Text CounterText;
+    public bool playerIsCount;
+
 
     private int Count = 0;
 
@@ -19,5 +21,6 @@ public class Counter : MonoBehaviour
     {
         Count += 1;
         CounterText.text = "Count : " + Count;
+        playerIsCount = true;
     }
 }
